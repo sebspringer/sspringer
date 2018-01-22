@@ -5,6 +5,7 @@
   "license": "MIT",
   "scripts": {
     "ng": "ng",
+    "prestart": "npm install",
     "start": "ng serve --port 1234 --open",
     "preoffline": "ng build --prod",
     "offline": "http-server ./dist -p 8888 -o",

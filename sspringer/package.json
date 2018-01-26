@@ -9,6 +9,7 @@
     "start": "ng serve --port 1234 --open",
     "watch": "ng serve --port 1234 --open",
     "preoffline": "ng build --prod",
+    "gitme": "git add . && git commit -m bootstrap && git push origin master",
     "offline": "http-server ./dist -p 8881 -o"
   },
   "private": true,
@@ -23,7 +24,7 @@
     "@angular/platform-browser-dynamic": "^5.2.0",
     "@angular/router": "^5.2.0",
     "@angular/service-worker": "^5.2.0",
-    "bootstrap": "^4.0.0",
+    "bootstrap": "^3.3.6",
     "core-js": "^2.4.1",
     "jquery": "^3.2.1",
     "postcss": "^5.2.18",

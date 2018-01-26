@@ -5,10 +5,9 @@
   "license": "MIT",
   "scripts": {
     "ng": "ng",
-    "prestart": "npm install",
     "start": "ng serve --port 1234 --open",
     "offline": "ng build --prod && http-server ./dist -p 8881 -o",
-    "gitme": "git add . && git commit -m packagejson && git push origin master"
+    "gitme": "git add . && git commit -m nav && git push origin master"
   },
   "private": true,
   "dependencies": {
@@ -24,7 +23,7 @@
     "@angular/service-worker": "^5.2.0",
     "bootstrap": "^3.3.6",
     "core-js": "^2.4.1",
-    "jquery": "^3.2.1",
+    "jquery": "^2.2.4",
     "postcss": "^5.2.18",
     "rxjs": "^5.5.6",
     "zone.js": "^0.8.19"

@@ -7,10 +7,8 @@
     "ng": "ng",
     "prestart": "npm install",
     "start": "ng serve --port 1234 --open",
-    "watch": "ng serve --port 1234 --open",
-    "preoffline": "ng build --prod",
-    "gitme": "git add . && git commit -m bootstrap && git push origin master",
-    "offline": "http-server ./dist -p 8881 -o"
+    "offline": "ng build --prod && http-server ./dist -p 8881 -o",
+    "gitme": "git add . && git commit -m packagejson && git push origin master"
   },
   "private": true,
   "dependencies": {

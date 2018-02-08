@@ -1,0 +1,14 @@
+{
+  "Project1": {
+    "name": "Test project",
+    "img": "image to project",
+    "url": "url to project",
+    "description": "description of project"
+  },
+  "Project2": {
+    "name": "Test project2",
+    "img": "image to project2",
+    "url": "url to project2",
+    "description": "description of project2"
+  }
+}

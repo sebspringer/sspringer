@@ -7,17 +7,17 @@ import { HttpClient } from '@angular/common/http';
   styleUrls: ['./portfolio.component.css']
 })
 export class PortfolioComponent implements OnInit {
+  projects: any;
 
   constructor(private http: HttpClient) { }
 
   ngOnInit() {
     this.http.get('assets/projects.json').subscribe(data => {
-      const projects = data;
-      console.log(projects);
+      this.projects = data;
     },
     err => {
-      console.log('Error occured.');
-    }
+      console.log('Error no data.');
+    });
   }
 
 }

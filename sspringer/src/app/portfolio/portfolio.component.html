@@ -4,10 +4,16 @@
     </div>
   <div class="row">
     <div class="col-sm" *ngFor="let portfolio of projects?.project">
-      {{ portfolio.name}}
+      <h1>
+        {{ portfolio.name}}
+      </h1>
+      <a href="#">
+        {{ portfolio.url}}
+      </a>
+      <p>
+        {{ portfolio.description}}
+      </p>
       {{ portfolio.img}}
-      {{ portfolio.url}}
-      {{ portfolio.description}}
     </div>
   </div>
 </div>

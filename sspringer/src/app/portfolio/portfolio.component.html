@@ -1,27 +1,14 @@
 <div class="container-fluid">
-  <div class="container">
     <div class="jumbotron">
-      <h1>Portfolio works</h1>
-      <div class="table-responsive">
-        <table class="table table-hover">
-          <thead>
-            <tr>
-              <th>Name</th>
-              <th>img</th>
-              <th>url</th>
-              <th>description</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr *ngFor="let portfolio of projects?.project">
-              <td>{{ portfolio.name}}</td>
-              <td>{{ portfolio.img}}</td>
-              <td>{{ portfolio.url}}</td>
-              <td>{{ portfolio.description}}</td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
+        <h1>Portfolio works</h1>
+    </div>
+  <div class="row">
+    <div class="col-sm" *ngFor="let portfolio of projects?.project">
+      {{ portfolio.name}}
+      {{ portfolio.img}}
+      {{ portfolio.url}}
+      {{ portfolio.description}}
     </div>
   </div>
 </div>
+
